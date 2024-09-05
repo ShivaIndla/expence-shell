@@ -24,7 +24,7 @@ VALIDATE(){
         else
             echo -e "$RED error Please check the command $NORMAL" 
 
-            echo "==================***=========================="
+            echo "==================***========================="
         fi
     fi
 }
