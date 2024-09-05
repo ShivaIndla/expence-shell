@@ -8,9 +8,9 @@ RED="\e[31m"
 GREEN="\e[32m"
 NORMAL="\e[0m"
 
-VALIDATE(){
+VALIDATE(){ 
 
-    if [ $1 -eq 0]
+    if [ $1 -eq 0 ]
     then
         echo -e " $GREEN $2  is allready installed  $Yellow ....Skipping $NORMAL"
         echo "==================***=========================="
@@ -18,7 +18,7 @@ VALIDATE(){
         echo "installing $2 "
         dnf install $2 -y
         if [ $? -eq 0 ]
-        then
+        then 
             echo -e "Instalation of $Yellow $2 $NORMAL is $GREEN ....Success $NORMAL"
             echo "==================***=========================="
         else
@@ -26,7 +26,6 @@ VALIDATE(){
 
             echo "==================***=========================="
         fi
-
     fi
 }
 
